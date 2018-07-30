@@ -28,7 +28,7 @@ class App < Sinatra::Base
      @wrd3 = params[:word3]
      @wrd4 = params[:word4]
      @wrd5 = params[:word5]
-     "#{@wrd1%@wrd2%@wrd3%@wrd4%@wrd5}.join('')."
+     "#{@wrd1%@wrd2%@wrd3%@wrd4%@wrd5}".join('')
    end
    
    
