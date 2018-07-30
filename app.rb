@@ -30,5 +30,8 @@ class App < Sinatra::Base
      "#{@return.join(' ')}."
    end
    
+   get '/:operation/:number1/:number2' do
+     @num1 = params[:number1].to_i
+     @num1 = params[:number1].to_i
    
 end
