@@ -11,20 +11,15 @@ class App < Sinatra::Base
     @number = params[:number].to_i.Math.sqrt
     "#{@number}"
    end
-   
-  # get "say/:number/:phrase" do 
-  #   @num = params[:number].to_i 
-  #   @phrase = params[:phrase]
-  #   "#{@num.times} "
      
-       get '/say/:number/:phrase' do
+   get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @phrase = params[:phrase]
     @return = []
     @number.times do
       @return << @phrase
     end
-    @return.join
+     @return.join
    end
      
    
