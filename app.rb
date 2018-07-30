@@ -15,7 +15,7 @@ class App < Sinatra::Base
    get "say/:number/:phrase" do 
      @num = params[:number].to_i 
      @phrase = params[:phrase]
-    def repeat(@phrase, c=@num)
+    def repeat(phrase, c=@num)
      c.times.collect { @phrase }.join(' ')
     end 
     "#{@phrase}"
