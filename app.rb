@@ -21,6 +21,8 @@ class App < Sinatra::Base
     end
      @return.join
    end
+   
+   get ''
      
    
    
