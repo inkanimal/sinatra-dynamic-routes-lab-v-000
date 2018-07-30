@@ -18,7 +18,7 @@ class App < Sinatra::Base
     def repeat(phrase=@phrase, c=@num)
      c.times.collect { phrase }.join(' ')
     end 
-    "#{@phrase}"
+    "#{repeat}"
    end
    
 end
