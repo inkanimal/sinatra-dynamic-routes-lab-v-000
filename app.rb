@@ -43,8 +43,9 @@ class App < Sinatra::Base
         @oper = "multiply"
         "#{@num1*@num2}" 
      else 
-       elsif
-        @oper = "subtract"
-        "#{@num1 - @num2}"
+        @oper = "divide"
+        "#{@num1/@num2}"
+     end
+   end
    
 end
