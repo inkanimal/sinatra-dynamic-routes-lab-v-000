@@ -25,7 +25,7 @@ class App < Sinatra::Base
       @return << @phrase
     end
     @return.join
-  end
+   end
      
    
    
